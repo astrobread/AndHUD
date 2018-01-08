@@ -105,9 +105,7 @@ namespace AndroidHUD
 		void showStatus (Context context, bool spinner, string status = null, MaskType maskType = MaskType.Black, TimeSpan? timeout = null, Action clickCallback = null, bool centered = true, Action cancelCallback = null)
 		{
 			if (timeout == null)
-				timeout = TimeSpan.Zero;
-
-			DismissCurrent (context);
+				timeout = TimeSpan.Zero;			
 
 			if (CurrentDialog != null && statusObj == null)
 				DismissCurrent (context);
